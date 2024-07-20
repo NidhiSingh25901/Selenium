@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="E:/Editor/eclipse-java-2024-06-R-win32-x86_64/eclipse/plugins/org.testng_7.10.1.r202404130807.jar" sourcepath="E:/Editor/eclipse-java-2024-06-R-win32-x86_64/eclipse/plugins/org.testng.source_7.10.1.r202404130807.jar"/>
+	<classpathentry kind="lib" path="C:/Users/nidhi/Downloads/testng-7.10.2-sources.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
