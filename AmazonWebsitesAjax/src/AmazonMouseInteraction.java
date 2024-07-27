@@ -48,38 +48,19 @@ public class AmazonMouseInteraction {
         String finalURL = driver.getCurrentUrl();
         System.out.println("Final URL after refresh: " + finalURL);
 
-        // Assuming you want to capture an image from the refreshed page
-        List<WebElement> paginationElements = driver.findElements(By.xpath("//yourImageXPath")); // Replace with the correct XPath
-        
-        int pageCount = paginationElements.size();
-        if (pageCount > 0) {
-            String imageUrl = paginationElements.get(pageCount - 1).getAttribute("src");
-            BufferedImage image = ImageIO.read(new URL(imageUrl));
-            File imageFile = new File("captured_image.png");
-            ImageIO.write(image, "png", imageFile);
+		Actions action = new Actions(driver);
+		
+		//hovering on a particular element
+		action.moveToElement(driver.findElement(By.id("nav-link-accountList"))).build().perform();
+		
+		//inserting text in CAPS using keyboard SHIFT
+		action.moveToElement(driver.findElement(By.className("nav-search-field"))).click().keyDown(Keys.SHIFT).sendKeys("watch").keyDown(Keys.ENTER).build().perform();
+		
+		//inserting text in CAPS using keyboard SHIFT and selecting the complete text
+	    //action.moveToElement(driver.findElement(By.className("nav-search-field"))).click().keyDown(Keys.SHIFT).sendKeys("watch").doubleClick().build().perform();
 
-            ITesseract tess = new Tesseract();
-            tess.setDatapath("E:/Software_Testing/OCR/Software_Technology/tessdata"); // Path to the tessdata folder
-            tess.setLanguage("eng"); // Set language if needed
-
-            // Extract text from the image
-            String extractedText = tess.doOCR(imageFile);
-            System.out.println("Extracted Text: " + extractedText);
-
-            
-            driver.findElement(By.xpath("//*[@id=\"nav-main\"]/div[1]/div/div/div[3]/span[1]/span/input")).click();
-            
-            // Perform actions with the extracted text
-            Actions action = new Actions(driver);
-            action.moveToElement(driver.findElement(By.id("captchacharacters"))).click().sendKeys(extractedText).perform();
-            driver.findElement(By.xpath("//yourSubmitButtonXPath")).click(); // Replace with the correct XPath 
-            
-            Actions textBox = new Actions(driver); 
-            textBox.moveToElement(driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]"))).click().keyDown(Keys.SHIFT).sendKeys("Watch").keyDown(Keys.ENTER).perform(); 
-            Actions signInAction = new Actions(driver); 
-            signInAction.moveToElement(driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]"))).perform(); 
-            
-        }
+		//right clicking on the website
+		action.contextClick().build().perform();
 
     }
 }
