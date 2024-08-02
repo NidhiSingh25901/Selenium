@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-03T03:22:01 IST" name="Loan Department" finished-at="2024-08-03T03:22:02 IST" duration-ms="102">
+    <groups>
+      <group name="Smoke">
+        <method signature="day2.ploan(java.lang.String,java.lang.String)[pri:0, instance:test.day2@15a34df2]" name="ploan" class="test.day2"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-08-03T03:22:01 IST" name="Car Loan" finished-at="2024-08-03T03:22:02 IST" duration-ms="73">
+      <class name="test.day3">
+        <test-method signature="mobilelogincarloan()[pri:0, instance:test.day3@169bb4dd]" started-at="2024-08-03T03:22:02 IST" name="mobilelogincarloan" finished-at="2024-08-03T03:22:02 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilelogincarloan -->
+        <test-method signature="weblogincarloan()[pri:0, instance:test.day3@169bb4dd]" started-at="2024-08-03T03:22:02 IST" name="weblogincarloan" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weblogincarloan -->
+        <test-method signature="loginapicarloan()[pri:0, instance:test.day3@169bb4dd]" started-at="2024-08-03T03:22:02 IST" name="loginapicarloan" finished-at="2024-08-03T03:22:02 IST" depends-on-methods="test.day3.mobilelogincarloan, test.day3.weblogincarloan" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginapicarloan -->
+      </class> <!-- test.day3 -->
+    </test> <!-- Car Loan -->
+    <test started-at="2024-08-03T03:22:01 IST" name="Personal Loan" finished-at="2024-08-03T03:22:02 IST" duration-ms="102">
+      <class name="test.day4">
+        <test-method signature="loginapicarloan()[pri:0, instance:test.day4@5b38c1ec]" started-at="2024-08-03T03:22:02 IST" name="loginapicarloan" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginapicarloan -->
+        <test-method signature="mobilelogincarloan()[pri:0, instance:test.day4@5b38c1ec]" started-at="2024-08-03T03:22:02 IST" name="mobilelogincarloan" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilelogincarloan -->
+        <test-method signature="weblogincarloan()[pri:0, instance:test.day4@5b38c1ec]" started-at="2024-08-03T03:22:02 IST" name="weblogincarloan" finished-at="2024-08-03T03:22:02 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- weblogincarloan -->
+      </class> <!-- test.day4 -->
+      <class name="test.day2">
+        <test-method is-config="true" signature="prerequisit()[pri:0, instance:test.day2@15a34df2]" started-at="2024-08-03T03:22:02 IST" name="prerequisit" finished-at="2024-08-03T03:22:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisit -->
+        <test-method signature="mobilesignincarloan(java.lang.String,java.lang.String)[pri:0, instance:test.day2@15a34df2]" started-at="2024-08-03T03:22:02 IST" name="mobilesignincarloan" data-provider="getData" finished-at="2024-08-03T03:22:02 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilesignincarloan -->
+        <test-method signature="mobilesignincarloan(java.lang.String,java.lang.String)[pri:0, instance:test.day2@15a34df2]" started-at="2024-08-03T03:22:02 IST" name="mobilesignincarloan" data-provider="getData" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilesignincarloan -->
+        <test-method signature="mobilesignincarloan(java.lang.String,java.lang.String)[pri:0, instance:test.day2@15a34df2]" started-at="2024-08-03T03:22:02 IST" name="mobilesignincarloan" data-provider="getData" finished-at="2024-08-03T03:22:02 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilesignincarloan -->
+        <test-method signature="ploan(java.lang.String,java.lang.String)[pri:0, instance:test.day2@15a34df2]" started-at="2024-08-03T03:22:02 IST" name="ploan" finished-at="2024-08-03T03:22:02 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaclickacademy.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ploan -->
+      </class> <!-- test.day2 -->
+      <class name="test.day1">
+        <test-method is-config="true" signature="prerequisitetest()[pri:0, instance:test.day1@5f8e8a9d]" started-at="2024-08-03T03:22:02 IST" name="prerequisitetest" finished-at="2024-08-03T03:22:02 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisitetest -->
+        <test-method is-config="true" signature="beforeclass()[pri:0, instance:test.day1@5f8e8a9d]" started-at="2024-08-03T03:22:02 IST" name="beforeclass" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method is-config="true" signature="beforemethod()[pri:0, instance:test.day1@5f8e8a9d]" started-at="2024-08-03T03:22:02 IST" name="beforemethod" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforemethod -->
+        <test-method signature="demo()[pri:0, instance:test.day1@5f8e8a9d]" started-at="2024-08-03T03:22:02 IST" name="demo" finished-at="2024-08-03T03:22:02 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method is-config="true" signature="aftermethod()[pri:0, instance:test.day1@5f8e8a9d]" started-at="2024-08-03T03:22:02 IST" name="aftermethod" finished-at="2024-08-03T03:22:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftermethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:test.day1@5f8e8a9d]" started-at="2024-08-03T03:22:02 IST" name="afterclass" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:test.day1@5f8e8a9d]" started-at="2024-08-03T03:22:02 IST" name="AfterTest" finished-at="2024-08-03T03:22:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- test.day1 -->
+    </test> <!-- Personal Loan -->
+  </suite> <!-- Loan Department -->
+</testng-results>

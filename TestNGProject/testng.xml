@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+  <test thread-count="5" name="Personal Loan">
+    <classes>
+      <class name="test.day1">
+      <methods>
+      <include name="demo" />
+      </methods>
+      
+      </class>
+      <class name="test.day2"/>
+      <class name="test.day4"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="Car Loan">
+    <classes>
+      <class name="test.day3">
+        <methods>
+            <exclude name="weblogincarloan"></exclude> 
+            <exclude name="mobile.*"></exclude>  <!--It will exclude all test cases starting with mobileMstestAppCompat@2591-->
+        </methods>
+        </class>
+    </classes>
+  </test> 
+  
+</suite> <!-- Suite -->
